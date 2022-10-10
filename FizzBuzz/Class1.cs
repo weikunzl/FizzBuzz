@@ -6,22 +6,28 @@ namespace FizzBuzz
     {
         public string CountsOff(int i)
         {
+            string result = string.Empty;
             if (0.Equals(i % 3))
             {
-                return "Fizz";
+                result = "Fizz";
             }
 
             if (0.Equals(i % 5))
             {
-                return "Buzz";
+                result += "Buzz";
             }
 
             if (0.Equals(i % 7))
             {
-                return "Whizz";
+                result += "Whizz";
             }
 
-            return i.ToString();
+            if (result.Equals(string.Empty))
+            {
+                return i.ToString();
+            }
+
+            return result;
         }
     }
 }

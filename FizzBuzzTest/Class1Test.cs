@@ -50,5 +50,41 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("Whizz", count);
         }
+
+        [Fact]
+        public void Should_return_FizzBuzz_when_counts_off_given_15()
+        {
+            Class1 class1 = new Class1();
+            string count = class1.CountsOff(15);
+            //then
+            Assert.Equal("FizzBuzz", count);
+        }
+
+        [Fact]
+        public void Should_return_FizzWhizz_when_counts_off_given_21()
+        {
+            Class1 class1 = new Class1();
+            string count = class1.CountsOff(21);
+            //then
+            Assert.Equal("FizzWhizz", count);
+        }
+
+        [Fact]
+        public void Should_return_BuzzWhizz_when_counts_off_given_35()
+        {
+            Class1 class1 = new Class1();
+            string count = class1.CountsOff(35);
+            //then
+            Assert.Equal("BuzzWhizz", count);
+        }
+
+        [Fact]
+        public void Should_return_FizzBuzzWhizz_when_counts_off_given_105()
+        {
+            Class1 class1 = new Class1();
+            string count = class1.CountsOff(105);
+            //then
+            Assert.Equal("FizzBuzzWhizz", count);
+        }
     }
 }
